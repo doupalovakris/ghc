@@ -1,0 +1,85 @@
+{% extends '_base.twig' %}
+
+{% block title %}
+    Index page
+{% endblock %}
+
+{% block content %}
+    <header>
+
+        <img alt="Generic hipster coffee" class="img-fluid w-25" src="/img/logo.svg">
+
+        <nav>
+            <ul>
+                <li class="active">
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/menu">Menu</a>
+                </li>
+                <li>
+                    <a href="/coffee">Coffee</a>
+                </li>
+                <li>
+                    <a href="/our-story">Our Story</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <img alt="Generic hipster coffee area" class="img-fluid" src="/img/counter.jpg">
+
+        <h1>Generic Hipster Coffee</h1>
+        <h2>Specialty coffee, fresh food &amp; local community.</h2>
+
+        <h3>Opening hours</h3>
+        <p>sunday &ndash; thursday: 8:00 &ndash; 23:00</p>
+        <p>friday &ndash; saturday: 8:00 &ndash; 1:00</p>
+
+        <h3>Book a table</h3>
+        <p>Call
+            <a href="tel:+14153214567">+1 415&ndash;321&ndash;4567</a>
+        </p>
+
+        <h3>Address</h3>
+        <p>
+            321 Ivy St.
+            <br>San Francisco, CA 94102
+        </p>
+
+        <img
+        alt="mapa" src="//satyr.io/1090x614/grey?text=mapa">
+    {# todo: nahradit skutečnou mapou #}
+
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li class="active">
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/menu">Menu</a>
+                </li>
+                <li>
+                    <a href="/coffee">Coffee</a>
+                </li>
+                <li>
+                    <a href="/our-story">Our Story</a>
+                </li>
+            </ul>
+        </nav>
+
+        <p>#Hipstersmakecoffee</p>
+        <p>Follow us on
+            <a href="#">Twitter</a>
+            and
+            <a href="#">Instagram</a>
+        </p>
+
+    </footer>
+{% endblock %}
