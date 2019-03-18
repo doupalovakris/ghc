@@ -7,7 +7,55 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
+<header>
+
+        <img alt="Generic hipster coffee" class="img-fluid w-25" src="/img/logo.svg">
+
+        <nav>
+            <ul>
+                <li class="active">
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/menu">Menu</a>
+                </li>
+                <li>
+                    <a href="/coffee">Coffee</a>
+                </li>
+                <li>
+                    <a href="/our-story">Our Story</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
 {% block content %}{% endblock %}
+    <footer>
+        <nav>
+            <ul>
+                <li class="active">
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/menu">Menu</a>
+                </li>
+                <li>
+                    <a href="/coffee">Coffee</a>
+                </li>
+                <li>
+                    <a href="/our-story">Our Story</a>
+                </li>
+            </ul>
+        </nav>
+
+        <p>#Hipstersmakecoffee</p>
+        <p>Follow us on
+            <a href="#">Twitter</a>
+            and
+            <a href="#">Instagram</a>
+        </p>
+
+    </footer>
 {#
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS and your own script at the end -->
