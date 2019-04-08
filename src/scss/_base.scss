@@ -1,9 +1,16 @@
 .hc-menu-item {
-  max-width: 27rem;
+    max-width: 27rem;
 }
 
 h1,
 h2,
 h3 {
-  text-transform: uppercase;
+    text-transform: uppercase;
+}
+
+.card {
+    max-width: 20.5rem;
+    @include media-breakpoint-up(lg) {
+        max-width: 100%;
+    }
 }
