@@ -29,5 +29,51 @@
       "name": "black",
       "value": "#000"
     }
+  ],
+  "coffees": [
+    {
+      "name": "Ou Yang",
+      "country": "China",
+      "img": "/img/coffee/ou-yang_c6avya_c_scale,w_573.jpg",
+      "taste": [
+        "strawberry jam",
+        "lychee",
+        "creamy"
+      ],
+      "info": "Our very first coffee from China is the excellent Ou Yang from the Yunnan Region, close to the border of Laos and Vietnam. Big strawberry, jammy flavours and fresh lychees abound in the cup with a creamy mouthfeel. Off to a good start with our first of hopefully many coffees from the region!"
+    },
+    {
+      "name": "Sin Limites",
+      "country": "Costa Rica",
+      "img": "/img/coffee/sin-limites_dacrsy_c_scale,w_567.jpg",
+      "taste": [
+        "orange",
+        "red grape",
+        "syrupy"
+      ],
+      "info": "A new producer relationship for us and our first lot from Sin Limites. A big syrupy mouthfeel sits alongside orange and red grapes, off to a great start with this farm, lets hope for many more tasty coffees!"
+    },
+    {
+      "name": "Liquidambar",
+      "country": "Guatemala",
+      "img": "/img/coffee/Coffee-SQUARE_df23375a-293b-4a45-8c4c-eb7655e71855_vm5ywi_c_scale,w_565.jpg",
+      "taste": [
+        "pear",
+        "caramel",
+        "honeysuckle"
+      ],
+      "info": "Pacamaras don't come up that often for us so releasing this lot from Guatemala is a bit special. Pear and green apple acidity alongside a caramel sweetness and a fragrant honeysuckle quality making for a unique and pleasing cup."
+    },
+    {
+      "name": "Santa Rosa 1900",
+      "country": "Costa Rica",
+      "img": "/img/coffee/santa-rosa_ex190j_c_scale,w_561.jpg",
+      "taste": [
+        "poached pear",
+        "butterscotch",
+        "almond"
+      ],
+      "info": "We welcome our November instalment of the Ten For Ten coffee series; celebrating ten years of Square Mile with Santa Rosa from Costa Rica. We have been buying from Luis and Oscar's farms for years now and this has a very deserved place in the series. Sweet poached pears precede creamy butterscotch with hints of almond in the finish, the definition of a well-rounded coffee."
+    }
   ]
 }
