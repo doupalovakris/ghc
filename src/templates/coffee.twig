@@ -6,6 +6,7 @@
 
 {% block content %}
   <main>
+
     <div class="container">
 
       <h1 class="mt-5 mb-3">Coffee</h1>
@@ -15,62 +16,29 @@
       <p class="my-2">You can currently buy these beans in 350g bags</p>
 
       <div class="row justify-content-center">
+          {% for coffee in coffees %}
+            <div class="col-12 col-md-6 mt-2 mb-3">
+              <div class="card border-light bg-light pb-4 mx-auto h-100">
+                <div class="card-header border-bottom-secondary bg-muted">
+                  <h2 class="card-title mb-0">{{ coffee.name }} ({{ coffee.country }})</h2>
+                </div>
+                <img alt="{{ coffee.name }} ({{ coffee.country }})" class="card-img-top" src="{{ coffee.img }}">
+                <div class="card-body">
+                  <p class="card-text font-italic">
+                    {{ coffee.taste|join(" / ")}}
+                  </p>
+                  <p class="card-text"> {{ coffee.info }}
+                  </p>
+                </div>
+              </div>
+            </div>
 
-        <div class="col-12 col-md-6 mt-2 mb-3">
-          <div class="card border-light bg-light pb-4 mx-auto h-100">
-            <div class="card-header border-bottom-secondary bg-muted">
-              <h2 class="card-title mb-0">Quejina (Guatemala)</h2>
-            </div>
-            <img alt="Coffee Quejina (Guatemala)" class="card-img-top" src="/img/smcr-quejina.jpg">
-            <div class="card-body">
-              <p class="card-text font-italic">redcurrant/honeysuckle/juicy</p>
-              <p class="card-text">Fruity redcurrant and sweet honeysuckle flavours. An incredibly juicy coffee which we struggled to decide on the right berry descriptor, but raspberry, blackberry and blueberry were also in the running!
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 mt-2 mb-3">
-          <div class="card border-light bg-light pb-4 mx-auto h-100">
-            <div class="card-header border-bottom-secondary bg-muted">
-              <h2 class="card-title mb-0">Mormora (Ethiopia)</h2>
-            </div>
-            <img alt="Coffee Mormora (Ethiopia)" class="card-img-top" src="/img/smcr-mormora.jpg">
-            <div class="card-body">
-              <p class="card-text font-italic">blackberry/orange/silky
-              </p>
-              <p class="card-text">Fruity, sweet notes of dried mango, strawberry and passionfruit sit alongside a delicious creamy mouthfeel making this a tasty summer Ethiopian, hot or cold.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 mt-2 mb-3">
-          <div class="card border-light bg-light pb-4 mx-auto h-100">
-            <div class="card-header border-bottom-secondary bg-muted">
-              <h2 class="card-title mb-0">Kamwangi (Kenya)</h2>
-            </div>
-            <img alt="Coffee Kamwangi (Kenya)" class="card-img-top" src="/img/smcr-kamwangi.jpg">
-            <div class="card-body">
-              <p class="card-text font-italic">blackberry/orange/silky</p>
-              <p class="card-text">This is one fruit filled espresso! From citrus fruits, such as orange, grapefruit and clementine, to berries of the black, blue and red variety, this is fruit turned up to 11, all wrapped up in a silky smooth body.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 mt-2 mb-3">
-          <div class="card border-light bg-light pb-4 mx-auto h-100">
-            <div class="card-header border-bottom-secondary bg-muted">
-              <h2 class="card-title mb-0">Decaf Espresso (El Salvador)</h2>
-            </div>
-            <img alt="Decaf Espresso (El Salvador)" class="card-img-top" src="/img/smcr-decaf-espresso.jpg">
-            <div class="card-body">
-              <p class="card-text font-italic">caramel/apple/cinnamon</p>
-              <p class="card-text">This is a single origin espresso from San Carlos in El Salvador, think sweet caramel and apple notes alongside sprinklings of cinnamon in the finish.</p>
-            </div>
-          </div>
-        </div>
+           {% endfor %}  
       </div>
+    </div>
+
+
+      
 
     </main>
 
