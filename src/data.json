@@ -1,0 +1,48 @@
+{
+  "coffees": [
+    {
+      "name": "",
+      "country": "Peru",
+      "img": "/img/coffee/Coffee-SQUARE_10deb9c1-09ed-4854-8821-68c3af08d982_large.jpg",
+      "taste": [
+        "peach",
+        "honeysuckle",
+        "custard"
+      ],
+      "info": "A new producer for us from the neighbouring farm of Saul Menor Tayca, the Alberto Frias Chuquicahua. A small farm in which Alberto does all the methodical harvesting and processing resulting in this tasty cup full of vibrant peach notes, gentle honeysuckle and a custardlike mouthfeel."
+    },
+    {
+      "name": "Gitega Hills",
+      "country": "Rwanda",
+      "img": "/img/coffee/Coffee-SQUARE_3e43b47c-0621-498b-9ede-1abe32a6b559_large.jpg",
+      "taste": [
+        "plum",
+        "blood orange",
+        "wild honey"
+      ],
+      "info": "Blood orange and plum flavours, with a luscious wild honey sweetness, feature prominently in the cup. Our first coffee from Gitega Hills, and we look forward to working with them in the years to come!"
+    },
+    {
+      "name": "Las Brisas",
+      "country": "Colombia",
+      "img": "/img/coffee/Coffee-SQUARE_648fadbe-1b51-403b-af34-a06b687b6e0b_large.jpg",
+      "taste": [
+        "plum",
+        "cinnamon",
+        "butterscotch"
+      ],
+      "info": "Las Brisas is a returning favourite from a group of producers in the Tolima region. Fresh plums up front followed by warm, smooth cinnamon, rounded off by a butterscotch sweetness. The perfect pick-me-up for any time of day!"
+    },
+    {
+      "name": "Magwila",
+      "country": "Tanzania",
+      "img": "/img/coffee/Coffee-SQUARE_b890a84e-27fc-406c-8f0f-8474fb61d2a3_large.jpg",
+      "taste": [
+        "blackcurrant",
+        "apple",
+        "wine gums"
+      ],
+      "info": "Magwila was way too delicious to only have as a filter, so we are offering it as an espresso too! Grown in the Mbozi region, Magwila espresso shows notes of blackcurrant and apple followed by wine gum sweetness."
+    }
+  ]
+}
