@@ -1,9 +1,9 @@
 {
   "coffees": [
     {
-      "name": "",
+      "name": "Alberto Frias Chuquicahua",
       "country": "Peru",
-      "img": "/img/coffee/Coffee-SQUARE_10deb9c1-09ed-4854-8821-68c3af08d982_large.jpg",
+      "img": "/img/coffees/Coffee-SQUARE_10deb9c1-09ed-4854-8821-68c3af08d982_large.jpg",
       "taste": [
         "peach",
         "honeysuckle",
@@ -14,7 +14,7 @@
     {
       "name": "Gitega Hills",
       "country": "Rwanda",
-      "img": "/img/coffee/Coffee-SQUARE_3e43b47c-0621-498b-9ede-1abe32a6b559_large.jpg",
+      "img": "/img/coffees/Coffee-SQUARE_3e43b47c-0621-498b-9ede-1abe32a6b559_large.jpg",
       "taste": [
         "plum",
         "blood orange",
@@ -25,7 +25,7 @@
     {
       "name": "Las Brisas",
       "country": "Colombia",
-      "img": "/img/coffee/Coffee-SQUARE_648fadbe-1b51-403b-af34-a06b687b6e0b_large.jpg",
+      "img": "/img/coffees/Coffee-SQUARE_648fadbe-1b51-403b-af34-a06b687b6e0b_large.jpg",
       "taste": [
         "plum",
         "cinnamon",
@@ -36,7 +36,7 @@
     {
       "name": "Magwila",
       "country": "Tanzania",
-      "img": "/img/coffee/Coffee-SQUARE_b890a84e-27fc-406c-8f0f-8474fb61d2a3_large.jpg",
+      "img": "/img/coffees/Coffee-SQUARE_b890a84e-27fc-406c-8f0f-8474fb61d2a3_large.jpg",
       "taste": [
         "blackcurrant",
         "apple",
