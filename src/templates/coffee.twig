@@ -6,40 +6,43 @@
 
 {% block content %}
   <main>
-
     <div class="container">
 
       <h1 class="mt-5 mb-3">Coffee</h1>
 
-      <p>We work with specialty coffee from current crops which is carefully roasted. Our coffee is fruity, juicy and never boring. We bring you the best from leading european specialty roasteries, currently mostly from <a href="http://www.squaremilecoffee.com" class="text-primary">Square Mile Coffee Roasters</a>, a multi award winning coffee roasting company based in East London.
+      <p>
+        We work with specialty coffee from current crops which is carefully roasted. Our coffee is fruity, juicy and never boring. We bring you the best from leading european specialty roasteries, currently mostly from
+        <a class="text-primary" href="http://www.squaremilecoffee.com">Square Mile Coffee Roasters</a>, a multi award winning coffee roasting company based in East London.
       </p>
       <p class="my-2">You can currently buy these beans in 350g bags</p>
 
       <div class="row justify-content-center">
-          {% for coffee in coffees %}
-            <div class="col-12 col-md-6 mt-2 mb-3">
-              <div class="card border-light bg-light pb-4 mx-auto h-100">
-                <div class="card-header border-bottom-secondary bg-muted">
-                  <h2 class="card-title mb-0">{{ coffee.name }} ({{ coffee.country }})</h2>
-                </div>
-                <img class="card-img-top" src="{{ coffee.img }}">
-                <div class="card-body">
-                  <p class="card-text font-italic">
-                    {{ coffee.taste|join(" / ")}}
-                  </p>
-                  <p class="card-text"> {{ coffee.info }}
-                  </p>
-                </div>
-              </div>
-            </div>
+        {% for coffee in coffees %}
+          <div class="col-12 col-md-6 mt-2 mb-3">
+            <div class="card border-light bg-light pb-4 mx-auto h-100">
 
-           {% endfor %}  
+              <div class="card-header border-bottom-secondary bg-muted">
+                <h2 class="card-title mb-0">
+                  {{ coffee.name }}
+                  ({{ coffee.country }})
+                </h2>
+              </div>
+
+              <img class="card-img-top" src="{{ coffee.img }}">
+
+              <div class="card-body">
+                <p class="card-text font-italic">
+                  {{ coffee.taste|join(" / ")}}
+                </p>
+                <p class="card-text">
+                  {{ coffee.info }}
+                </p>
+              </div>
+
+            </div>
+          </div>
+        {% endfor %}
       </div>
     </div>
-
-
-      
-
-    </main>
-
-  {% endblock %}
+  </main>
+{% endblock %}
