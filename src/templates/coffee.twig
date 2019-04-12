@@ -1,8 +1,12 @@
 {% extends '_base.twig' %}
 
 {% block title %}
-  Coffee &ndash; Generic Hipster Coffee
+  Coffee &ndash; {{ parent() }}
 {% endblock %}
+
+ {% block activeCoffee %}
+ active
+ {% endblock %}
 
 {% block content %}
   <main>

@@ -5,7 +5,7 @@
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     <link href="index.css" rel="stylesheet">
     <title>
-      {% block title %}{% endblock %}
+      {% block title %}Generic Hipster Coffee{% endblock %}
     </title>
   </head>
 
@@ -15,16 +15,16 @@
 
       <div class="bg-light">
         <div class="container">
-          <nav class="navbar navbar-expand flex-column flex-md-row justify-content-center justify-content-sm-between flex-wrap flex-sm-nowrap text-nowrap">
+          <nav class="navbar navbar-expand navbar-light flex-column flex-md-row justify-content-center justify-content-sm-between flex-wrap flex-sm-nowrap text-nowrap">
 
             <a class="navbar-brand text-center text-md-left mr-0 mr-md-3" href="/">
               <img alt="Generic hipster coffee" class="img-fluid" src="/img/logo.svg">
             </a>
             <div class="navbar-nav">
-              <a active class="nav-item nav-link mx-sm-2" href="/">Home</a>
-              <a class="nav-item nav-link mx-sm-2" href="/menu">Menu</a>
-              <a class="nav-item nav-link mx-sm-2" href="/coffee">Coffee</a>
-              <a class="nav-item nav-link mx-sm-2" href="/our-story">Our Story</a>
+              <a class="{% block activeIndex %}{% endblock %} nav-item nav-link mx-sm-2" href="/">Home</a>
+              <a class="{% block activeMenu %}{% endblock %} nav-item nav-link mx-sm-2" href="/menu">Menu</a>
+              <a class="{% block activeCoffee %}{% endblock %}nav-item nav-link mx-sm-2" href="/coffee">Coffee</a>
+              <a class="{% block activeOurStory %}{% endblock %}nav-item nav-link mx-sm-2" href="/our-story">Our Story</a>
             </div>
           </div>
         </div>
@@ -36,10 +36,10 @@
 
       <div class="container">
         <nav class="nav justify-content-center flex-wrap flex-nowrap text-nowrap mt-4 mb-5 pb-4">
-          <a active class="nav-item nav-link text-white-50 mx-2" href="/">Home</a>
-          <a class="nav-item nav-link text-primary mx-sm-2" href="/menu">Menu</a>
-          <a class="nav-item nav-link text-primary mx-sm-2" href="/coffee">Coffee</a>
-          <a class="nav-item nav-link text-primary mx-sm-2" href="/our-story">Our Story</a>
+          <a class="{% block activeIndex %}{% endblock %} nav-item nav-link text-primary mx-2" href="/">Home</a>
+          <a class="{% block activeMenu %}{% endblock %} nav-item nav-link text-primary mx-sm-2" href="/menu">Menu</a>
+          <a class="{% block activeCoffee %}{% endblock %} nav-item nav-link text-primary mx-sm-2" href="/coffee">Coffee</a>
+          <a class="{% block activeOurStory %}{% endblock %} nav-item nav-link text-primary mx-sm-2" href="/our-story">Our Story</a>
         </nav>
 
         <p class="text-uppercase font-weight-bold">#hipstersmakecoffee</p>

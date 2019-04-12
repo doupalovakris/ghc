@@ -1,8 +1,12 @@
 {% extends '_base.twig' %}
 
 {% block title %}
-  Menu &ndash; Generic Hipster Coffee
+  Menu &ndash; {{ parent() }}
 {% endblock %}
+
+ {% block activeMenu %}
+ active
+ {% endblock %}
 
 {% block content %}
   <main>
