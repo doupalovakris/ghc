@@ -28,7 +28,9 @@
               <div class="card-header border-bottom-secondary bg-muted">
                 <h2 class="card-title mb-0">
                   {{ coffee.name }}
-                  <br class="d-sm-none d-md-block">
+                  {% if coffee.name|length < 16 %}
+                    <br class="d-sm-none d-md-block">
+                    {% endif %}
                   ({{ coffee.country }})
                 </h2>
               </div>
