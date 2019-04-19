@@ -18,18 +18,18 @@
         <div class="container px-0">
           <nav class="navbar navbar-expand navbar-light flex-sm-row justify-content-center justify-content-sm-between flex-wrap flex-sm-nowrap text-nowrap mb-5 px-0">
 
-            <a class="navbar-brand text-center text-md-left mr-0 mr-md-3" href="/">
-              <img alt="Generic hipster coffee" class="img-fluid" src="/img/logo.svg">
-            </a>
-            <div class="navbar-nav">
-              <a class="{% block activeIndex %}{% endblock %} nav-item nav-link mx-sm-2 pl-sm-4 pr-sm-0" href="/">Home</a>
-              <a class="{% block activeMenu %}{% endblock %} nav-item nav-link mx-sm-2 pl-sm-4 pr-sm-0" href="/menu">Menu</a>
-              <a class="{% block activeCoffee %}{% endblock %}nav-item nav-link mx-sm-2 pl-sm-4 pr-sm-0" href="/coffee">Coffee</a>
-              <a class="{% block activeOurStory %}{% endblock %}nav-item nav-link mx-sm-2 pl-sm-4 pr-sm-0" href="/our-story">Our Story</a>
-            </div>
+                <a class="navbar-brand text-center text-md-left mr-0 mr-md-3" href="/">
+                <img alt="Generic hipster coffee" class="img-fluid" src="/img/logo.svg">
+                </a>
+                <div class="navbar-nav">
+                <a class="{% block activeIndex %}{% endblock %} nav-item nav-link mx-sm-2 pl-sm-4 pr-sm-0" href="/">Home</a>
+                <a class="{% block activeMenu %}{% endblock %} nav-item nav-link mx-sm-2 pl-sm-4 pr-sm-0" href="/menu">Menu</a>
+                <a class="{% block activeCoffee %}{% endblock %}nav-item nav-link mx-sm-2 pl-sm-4 pr-sm-0" href="/coffee">Coffee</a>
+                <a class="{% block activeOurStory %}{% endblock %}nav-item nav-link mx-sm-2 pl-sm-4 pr-sm-0" href="/our-story">Our Story</a>
+                </div>
+            </nav>
           </div>
         </div>
-      </nav>
     </header>
 
     {% block content %}{% endblock %}
@@ -51,7 +51,6 @@
         </p>
 
       </div>
-    </header>
 
   </footer>
   {#
@@ -62,4 +61,5 @@
                   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
                   <script src="js/custom.js"></script>
                   #}
-</body></html>
+    </body>
+</html>
