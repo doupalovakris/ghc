@@ -57,15 +57,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .hc-footer-text-white {
     color: #ced4da;
-}
+    &-bigger {
+      letter-spacing: 0.08em;
+    }
+  }
 
-.hc-footer-text-white-bigger {
-    letter-spacing: 0.08em;
-}
-
-.hc-phone-num {
+  a[href^="tel:+14153214567"] {
     text-decoration: none;
-}
+  }
 
 .hc-menu-heading {
     margin-top: 6rem;
