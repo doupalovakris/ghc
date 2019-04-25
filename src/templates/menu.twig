@@ -1,143 +1,145 @@
 {% extends '_base.twig' %}
 
 {% block title %}
-  Menu &ndash; {{ parent() }}
+    Menu &ndash;
+    {{ parent() }}
 {% endblock %}
 
- {% block activeMenu %}
- active
- {% endblock %}
+{% block activeMenu %}
+    active
+{% endblock %}
 
 {% block content %}
-  <main>
+    <main>
 
-    <div class="container">
+        <div class="container">
 
-      <div class="row">
-        <div class="col-12 mb-4 mb-sm-0">
-          <h1>Menu</h1>
+            <div class="row">
+                <div class="col-12 mb-4 mb-sm-0">
+                    <h1>Menu</h1>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                    <h2 class="mt-sm-4">Espresso Coffee</h2>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Espresso</span> <span>3.8</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Double espresso</span> <span>4.9</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Americano</span> <span>5.0</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Espresso machiato</span> <span>4.3</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Cappuccino</span> <span>5.2</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Flat White</span> <span>5.9</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Latte</span> <span>5.9</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Extra shot</span> <span>1.1</span></p>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                    <h2 class="hc-menu-heading mt-sm-4">Filter coffee</h2>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">House Drip Coffee</span> <span>4.5</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Aeropress</span> <span>5.5</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">V60</span> <span>6.5</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Kalita</span> <span>12.0</span></p>
+
+                    <h2 class="hc-menu-heading">Coffee specialites</h2>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Cascara</span> <span>4.9</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Irish coffee</span> <span>10.9</span></p>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                    <h2 class="hc-menu-heading">Iced</h2>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Iced Latte</span> <span>6.9</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Espresso on the rock</span> <span>4.9</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Iced Cascara</span> <span>5.5</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Affogato</span> <span>5.9</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Iced Flat white</span> <span>5.9</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Iced Filter</span> <span>5.8</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Iced tea</span> <span>4.9</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Iced chocolate</span> <span>6.2</span></p>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                    <h2 class="hc-menu-heading">Hot</h2>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Tea</span> <span>4.9</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Ginger tea</span> <span>4.5</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Hot chocolate</span> <span>4.5</span></p>
+                </div>
+
+                <div class="col-12">
+                    <h2 class="hc-menu-heading mb-0">Non-alcoholic beverages</h2>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                    <h3 class="hc-menu-heading">Lemonades</h3>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Fresh Squeezed Lemonade</span> <span>5.0</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Ginger Lemonade</span> <span>4.5</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Cascara Fizz Original</span> <span>5.8</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Club&ndash;mate Cola</span> <span>4.5</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Tonic Thomas Henry</span> <span>4.3</span></p>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                    <h3 class="hc-menu-heading">Water</h3>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Sparkling</span> <span>2.4</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Still</span> <span>2.4</span></p>
+                </div>
+
+                <div class="col-12">
+                    <h2 class="hc-menu-heading mb-0">Alcoholic beverages</h2>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                    <h3 class="hc-menu-heading">Beer</h3>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Small breweries on tap</span> <span>3.5</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Birell (bottled)</span> <span>3.5</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Cider Magnetic Apple</span> <span>4.5</span></p>
+
+                    <h3 class="hc-menu-heading">White Wine</h3>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Chardonnay Les Vignes de L'Arque, France</span> <span>3.5</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Sauvignon Blanc, Château Le Sartre Blanc 2011</span> <span>3.8</span></p>
+
+                    <h3 class="hc-menu-heading">Red Wine</h3>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Cuvée Côtes du Rhône Vigneros de Caracterem</span> <span>3.5</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Cabernet Sauvignon, Château Tour du Roch&ndash;Milon 2011</span> <span>3.5</span></p>
+
+                    <h3 class="hc-menu-heading">Cocktails</h3>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Gin Tonic</span> <span>9.0</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Cuba Libre</span> <span>9.9</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Mojito</span> <span>9.9</span></p>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                    <h3 class="hc-menu-heading">Spirits</h3>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Metaxa 12*</span> <span>7.5</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Tullamore Dew</span> <span>6.5</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Jameson Whiskey</span> <span>6.5</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Bombay, Añejo Suave</span> <span>6.8</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Ron Cubay, Añejo Suave</span> <span>6.5</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Tequila, El Jimador, Reposado</span> <span>6.2</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Vodka Finlandia</span> <span>5.5</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Bailey's</span> <span>5.5</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Jagermeister</span> <span>5.5</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Graham's Tawny Porto</span> <span>4.7</span></p>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                    <h2 class="hc-menu-heading">Something to eat</h2>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Soup of the day</span> <span>5.8</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Chipotle Citrus Chicken Sandwich</span> <span>5.4</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Avocado Toast</span> <span>5.6</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Super BLT Sandwich</span> <span>12.8</span></p>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                    <h2 class="hc-menu-heading">Sweets</h2>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Homemade cakes of the day</span> <span>5.0</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Key Lime and Coconut</span> <span>1.5</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Icecream</span> <span>2.0</span></p>
+                    <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Tiramisu</span> <span>6.0</span></p>
+                </div>
+            </div>
+
+            <img alt="Dripping espresso coffee from the coffee machine" class="img-fluid mt-3 mb-n5" src="/img/espresso-machine-detail.jpg">
+
         </div>
-        <div class="col-12 col-sm-6">
-          <h2 class="mt-sm-4">Espresso Coffee</h2>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Espresso</span> <span>3.8</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Double espresso</span> <span>4.9</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Americano</span> <span>5.0</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Espresso machiato</span> <span>4.3</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Cappuccino</span> <span>5.2</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Flat White</span> <span>5.9</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Latte</span> <span>5.9</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Extra shot</span> <span>1.1</span></p>
-        </div>
 
-        <div class="col-12 col-sm-6">
-          <h2 class="hc-menu-heading mt-sm-4">Filter coffee</h2>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">House Drip Coffee</span> <span>4.5</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Aeropress</span> <span>5.5</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">V60</span> <span>6.5</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Kalita</span> <span>12.0</span></p>
-
-          <h2 class="hc-menu-heading">Coffee specialites</h2>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Cascara</span> <span>4.9</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Irish coffee</span> <span>10.9</span></p>
-        </div>
-
-        <div class="col-12 col-sm-6">
-          <h2 class="hc-menu-heading">Iced</h2>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Iced Latte</span> <span>6.9</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Espresso on the rock</span> <span>4.9</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Iced Cascara</span> <span>5.5</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Affogato</span> <span>5.9</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Iced Flat white</span> <span>5.9</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Iced Filter</span> <span>5.8</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Iced tea</span> <span>4.9</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Iced chocolate</span> <span>6.2</span></p>
-        </div>
-
-        <div class="col-12 col-sm-6">
-          <h2 class="hc-menu-heading">Hot</h2>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Tea</span> <span>4.9</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Ginger tea</span> <span>4.5</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Hot chocolate</span> <span>4.5</span></p>
-        </div>
-
-        <div class="col-12">
-          <h2 class="hc-menu-heading mb-0">Non-alcoholic beverages</h2>
-        </div>
-
-        <div class="col-12 col-sm-6">
-          <h3 class="hc-menu-heading">Lemonades</h3>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Fresh Squeezed Lemonade</span> <span>5.0</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Ginger Lemonade</span> <span>4.5</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Cascara Fizz Original</span> <span>5.8</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Club&ndash;mate Cola</span> <span>4.5</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Tonic Thomas Henry</span> <span>4.3</span></p>
-        </div>
-
-        <div class="col-12 col-sm-6">
-          <h3 class="hc-menu-heading">Water</h3>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Sparkling</span> <span>2.4</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Still</span> <span>2.4</span></p>
-        </div>
-
-        <div class="col-12">
-          <h2 class="hc-menu-heading mb-0">Alcoholic beverages</h2>
-        </div>
-
-        <div class="col-12 col-sm-6">
-          <h3 class="hc-menu-heading">Beer</h3>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Small breweries on tap</span> <span>3.5</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Birell (bottled)</span> <span>3.5</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Cider Magnetic Apple</span> <span>4.5</span></p>
-
-          <h3 class="hc-menu-heading">White Wine</h3>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Chardonnay Les Vignes de L'Arque, France</span> <span>3.5</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Sauvignon Blanc, Château Le Sartre Blanc 2011</span> <span>3.8</span></p>
-
-          <h3 class="hc-menu-heading">Red Wine</h3>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Cuvée Côtes du Rhône Vigneros de Caracterem</span> <span>3.5</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Cabernet Sauvignon, Château Tour du Roch&ndash;Milon 2011</span> <span>3.5</span></p>
-
-          <h3 class="hc-menu-heading">Cocktails</h3>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Gin Tonic</span> <span>9.0</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Cuba Libre</span> <span>9.9</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Mojito</span> <span>9.9</span></p>
-        </div>
-
-        <div class="col-12 col-sm-6">
-          <h3 class="hc-menu-heading">Spirits</h3>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Metaxa 12*</span> <span>7.5</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Tullamore Dew</span> <span>6.5</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Jameson Whiskey</span> <span>6.5</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Bombay, Añejo Suave</span> <span>6.8</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Ron Cubay, Añejo Suave</span> <span>6.5</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Tequila, El Jimador, Reposado</span> <span>6.2</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Vodka Finlandia</span> <span>5.5</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Bailey's</span> <span>5.5</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Jagermeister</span> <span>5.5</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Graham's Tawny Porto</span> <span>4.7</span></p>
-        </div>
-
-        <div class="col-12 col-sm-6">
-          <h2 class="hc-menu-heading">Something to eat</h2>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Soup of the day</span> <span>5.8</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Chipotle Citrus Chicken Sandwich</span> <span>5.4</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Avocado Toast</span> <span>5.6</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Super BLT Sandwich</span> <span>12.8</span></p>
-        </div>
-
-        <div class="col-12 col-sm-6">
-          <h2 class="hc-menu-heading">Sweets</h2>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Homemade cakes of the day</span> <span>5.0</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Key Lime and Coconut</span> <span>1.5</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Icecream</span> <span>2.0</span></p>
-          <p class="hc-menu-item d-flex justify-content-between"><span class="pr-3">Tiramisu</span> <span>6.0</span></p>
-        </div>
-      </div>
-
-      <img alt="Dripping espresso coffee from the coffee machine" class="img-fluid mt-3 mb-n5" src="/img/espresso-machine-detail.jpg">
-
-    </div>
-
-  </main>
+    </main>
 
 {% endblock %}
