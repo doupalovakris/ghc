@@ -1,6 +1,14 @@
 .hc-menu-item {
     max-width: 27rem;
+    @include media-breakpoint-up(sm){
+    max-width: 90%;
+    }
+
+    @include media-breakpoint-up(lg){
+      max-width: 25rem;
+    }
 }
+
 
 h1,
 h2,
@@ -30,9 +38,34 @@ h3 {
 }
 
 .text-primary.active {
-    color:rgba(255,255,255,.5)!important
+    color:#ced4da !important;
+    text-decoration: none !important;
 }
 
 .nav-link {
     text-decoration: none;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6,
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 0.07em;
+}
+
+.hc-link-underline {
+    text-decoration: underline;
+}
+
+.hc-footer-text-white {
+    color: #ced4da;
+    &-bigger {
+      letter-spacing: 0.08em;
+    }
+  }
+
+  a[href^="tel:"] {
+    text-decoration: none;
+  }
+
+.hc-menu-heading {
+    margin-top: 6rem;
 }

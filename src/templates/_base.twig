@@ -3,7 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
     <title>
       {% block title %}Generic Hipster Coffee{% endblock %}
     </title>
@@ -14,43 +22,42 @@
     <header>
 
       <div class="bg-light">
-        <div class="container">
-          <nav class="navbar navbar-expand navbar-light flex-column flex-md-row justify-content-center justify-content-sm-between flex-wrap flex-sm-nowrap text-nowrap">
+        <div class="container px-0">
+          <nav class="navbar navbar-expand navbar-light flex-sm-row justify-content-center justify-content-sm-between flex-wrap flex-sm-nowrap text-nowrap mb-5 px-0">
 
-            <a class="navbar-brand text-center text-md-left mr-0 mr-md-3" href="/">
-              <img alt="Generic hipster coffee" class="img-fluid" src="/img/logo.svg">
-            </a>
-            <div class="navbar-nav">
-              <a class="{% block activeIndex %}{% endblock %} nav-item nav-link mx-sm-2" href="/">Home</a>
-              <a class="{% block activeMenu %}{% endblock %} nav-item nav-link mx-sm-2" href="/menu">Menu</a>
-              <a class="{% block activeCoffee %}{% endblock %}nav-item nav-link mx-sm-2" href="/coffee">Coffee</a>
-              <a class="{% block activeOurStory %}{% endblock %}nav-item nav-link mx-sm-2" href="/our-story">Our Story</a>
-            </div>
+                <a class="navbar-brand text-center text-md-left mr-0 mr-md-3" href="/">
+                <img alt="Generic hipster coffee" class="img-fluid" src="/img/logo.svg">
+                </a>
+                <div class="navbar-nav">
+                <a class="{% block activeIndex %}{% endblock %} nav-item nav-link mx-sm-2 pl-sm-4 pr-sm-0" href="/">Home</a>
+                <a class="{% block activeMenu %}{% endblock %} nav-item nav-link mx-sm-2 pl-sm-4 pr-sm-0" href="/menu">Menu</a>
+                <a class="{% block activeCoffee %}{% endblock %}nav-item nav-link mx-sm-2 pl-sm-4 pr-sm-0" href="/coffee">Coffee</a>
+                <a class="{% block activeOurStory %}{% endblock %}nav-item nav-link mx-sm-2 pl-sm-4 pr-sm-0" href="/our-story">Our Story</a>
+                </div>
+            </nav>
           </div>
         </div>
-      </nav>
     </header>
 
     {% block content %}{% endblock %}
     <footer class="bg-dark text-white-50 text-center py-5">
 
       <div class="container">
-        <nav class="nav justify-content-center flex-wrap flex-nowrap text-nowrap mt-4 mb-5 pb-4">
-          <a class="{% block activeIndex %}{% endblock %} nav-item nav-link text-primary mx-2" href="/">Home</a>
-          <a class="{% block activeMenu %}{% endblock %} nav-item nav-link text-primary mx-sm-2" href="/menu">Menu</a>
-          <a class="{% block activeCoffee %}{% endblock %} nav-item nav-link text-primary mx-sm-2" href="/coffee">Coffee</a>
-          <a class="{% block activeOurStory %}{% endblock %} nav-item nav-link text-primary mx-sm-2" href="/our-story">Our Story</a>
+        <nav class="nav justify-content-center flex-wrap flex-xs-nowrap text-nowrap mt-4 mb-5 pb-4">
+          <a class="{% block activeIndex %}{% endblock %} hc-link-underline nav-item nav-link text-primary p-2 m-1 p-sm-4 m-sm-1" href="/">Home</a>
+          <a class="{% block activeMenu %}{% endblock %} hc-link-underline nav-item nav-link text-primary p-2 m-1 p-sm-4 m-sm-1" href="/menu">Menu</a>
+          <a class="{% block activeCoffee %}{% endblock %} hc-link-underline nav-item nav-link text-primary p-2 m-1 p-sm-4 m-sm-1" href="/coffee">Coffee</a>
+          <a class="{% block activeOurStory %}{% endblock %} hc-link-underline nav-item nav-link text-primary p-2 m-1 p-sm-4 m-sm-1" href="/our-story">Our Story</a>
         </nav>
 
-        <p class="text-uppercase font-weight-bold">#hipstersmakecoffee</p>
-        <p>Follow us on
-          <a class="text-primary" href="#">Twitter</a>
+        <p class="hc-footer-text-white hc-footer-text-white-bigger text-uppercase font-weight-bold lead pt-2">#hipstersmakecoffee</p>
+        <p class="hc-footer-text-white">Follow us on
+          <a class="text-primary" href="https://twitter.com/ghcoffeesf">Twitter</a>
           and
-          <a class="text-primary" href="#">Instagram</a>
+          <a class="text-primary" href="https://www.instagram.com/ghcoffeesf">Instagram</a>
         </p>
 
       </div>
-    </header>
 
   </footer>
   {#
@@ -61,4 +68,5 @@
                   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
                   <script src="js/custom.js"></script>
                   #}
-</body></html>
+    </body>
+</html>
