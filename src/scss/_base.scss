@@ -23,6 +23,13 @@ h3 {
     }
 }
 
+.navbar-brand {
+        flex: 0 1 auto;
+    @include media-breakpoint-up(md) {
+        flex: 0 1 150px;
+    }
+}
+
 .navbar-brand img {
   width: 66%;
   @include media-breakpoint-up(md) {
