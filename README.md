@@ -1,19 +1,14 @@
-# A basic template to develop a website based on Bootstrap 4
+# Generic Hipster Coffee
 
-Includes:
+Real website of a Café coded according to provided visual design.
 
-- **Bootstrap 4**: build responsive, mobile-first projects on the web with the world's most popular front-end component library
-- **Gulp 4**: task runner for running all of the following
-- **Sass compilation**: leverage the power of the most popular CSS extension language
-- **Sourcemaps** generation for easier Sass debugging
-- **Browsersync**: automatically reloads (or injects in case of CSS), browsers' when you change files 
-- **Autoprefixer**: parses CSS and adds vendor prefixes according to [caniuse.com]()
-- **UnCSS**: removes unused styles from CSS
-- **Flexbugs fixes**: automatically fixes some of the [flexbugs](https://github.com/philipwalton/flexbugs) 
-- **CSSO**: CSS minifier with structural optimizations
-- **Twig.js**: JavaScript implementation of the Twig PHP templating language
-- **Surge.sh**: deploy static websites easily and for free
+To build the website I have used Bootstrap 4 which I have customized with [CSS & SASS](https://github.com/hajkovakris/ghc/blob/master/src/scss/_base.scss) along with customisation using Bootstrap’s variables.
 
+[Twig templates](https://github.com/hajkovakris/ghc/tree/master/src/templates) were used for generating HTML files.
+
+The website is deployed using Surge.sh service at https://my-hipster-cafe.surge.sh/.
+
+I used https://github.com/benabraham/bs4-nodejs-static as a boilerplate.
 
 ## First time installation
 
