@@ -71,7 +71,7 @@ Folders and files from `/src/static/` are simply copied directly to `/dist/` fol
 
 ### Bootstrap
 
-You can comment out Bootstrap components you don't need in `/src/index.scss`.
+I commented out Bootstrap components I didn't need in `/src/index.scss`. I case you need them, don't forget to uncomment them.
 
 `/src/_custom-bootstrap-variables.scss` contains only customized Bootstrap variables.
 
@@ -80,15 +80,14 @@ See `browserslist` in `package.json` for supported browsers.
 
 ### Deployment
 
-Upload everything in `/dist/` folder to the server.
+Uploads everything in `/dist/` folder to the server.
 
 #### Surge.sh
 
-You can use [surge.sh](https://surge.sh) free service for that.
+I used [surge.sh](https://surge.sh) free service for that.
 
 1. Install surge client `npm install --global surge`.
 1. Run `surge` manually once in `/dist`: you will create an account with surge.sh.
-1. Set your own domain in `gulpfile.js` (replace `https://my-first-website.surge.sh`).
 1. From now on run `npm run deploy` whenever you want to publish a new version.
 
 If you want multiple people to be able to deploy to the same domain, run `surge --add mail.your.collaborator.used.to.register.with.surge@example.com` for each.
